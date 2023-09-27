@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"rel="stylesheet"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Material Design Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap JS and Dependencies (jQuery and Popper.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+    <title>Stick It</title>
+  </head>
+  <body>
+    <!-- <h1>Welcome to Stick It</h1> -->
+
+    <div class="navbar">
+      <h2>Stick It</h2>
+      <form action="/auth/signout" method="post">
+        <button type="submit" id="signout-btn" class="signout-btn">Sign out</button>
+      </form>
+    </div>
+
+    <div class="page-content page-container" id="page-content">
+      <div class="padding">
+        <div class="row container d-flex justify-content-center">
+          <div class="col-md-12">
+            <div class="card px-3">
+              <div class="card-body">
+                <h4 class="card-title">Welcome to Stick It</h4>
+                <div class="add-items d-flex">
+                  <input
+                    id="noteInput"
+                    type="text"
+                    class="form-control todo-list-input"
+                    placeholder="What do you need to do today?"
+                  />
+                  <button
+                    id="addNoteButton"
+                    class="add btn btn-primary font-weight-bold todo-list-add-btn"
+                  >
+                    Add
+                  </button>
+                </div>
+
+                <div class="list-wrapper">
+                  <ul
+                    id="notesList"
+                    class="d-flex flex-column-reverse todo-list"
+                  >
+                    <!-- Notes will be appended here as list items -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="todolist.js"></script>
+</html>
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> -->
